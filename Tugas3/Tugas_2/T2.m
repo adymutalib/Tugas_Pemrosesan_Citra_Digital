@@ -1,4 +1,4 @@
-gambar = imread('C:\Users\ACER\Downloads\Tugas_2\img\PCD.jpg');
+gambar = imread('D:\DATA ADY MUTALIB\DATA ADY MUTALIF\DATA KULIAH\DATA KULIAH SEMESTER III 2022\MATKUL\KAMIS\Pemrosesan Citra Digital\Tugas_Pemrosesan_Citra_Digital\Tugas3\Tugas_2\img\PCD.jpg');
 imshow(gambar);
 R = gambar(:,:,1);
 G = gambar(:,:,2);
