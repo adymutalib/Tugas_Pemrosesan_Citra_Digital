@@ -1,5 +1,5 @@
 %Membaca letak gambar
-gambar = imread('D:D:\DATA ADY MUTALIB\DATA ADY MUTALIF\DATA KULIAH\DATA KULIAH SEMESTER III 2022\MATKUL\KAMIS\Pemrosesan Citra Digital\Tugas_Pemrosesan_Citra_Digital\Tugas4\img\original.png');
+gambar = imread('D:\DATA ADY MUTALIB\DATA ADY MUTALIF\DATA KULIAH\DATA KULIAH SEMESTER III 2022\MATKUL\KAMIS\Pemrosesan Citra Digital\Tugas_Pemrosesan_Citra_Digital\Tugas4\img\apel 32x32.png');
 
 %Membaca warna yang ditampilkan
 Habang = gambar(:,:,1);

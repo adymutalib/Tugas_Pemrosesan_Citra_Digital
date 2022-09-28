@@ -3,7 +3,7 @@
 
 # Konversikan RGB ke Skala Abu-abu
 * ## Original
-<p align="center"><img src="img/Original_.PNG" alt="halftoning" width="500px">
+<p align="center"><img src="img/ASLI.png" alt="halftoning" width="500px">
 
 * ## Lightness Method
 Metode yang sangat sederhana adalah **dengan mengambil nilai rata-rata komponen dengan nilai tertinggi dan terendah:**
