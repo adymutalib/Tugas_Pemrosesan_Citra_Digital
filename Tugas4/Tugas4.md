@@ -89,6 +89,75 @@ b. Digital halftoning image of PAINTER via patterning
 
     Listing 4.2 adalah implementasi MATLAB dari proses dithering.
 
+<br>
+<br>
+<br>
+
+# MENENTUKAN POLA PATTERNING
+
+Pattern atau pola dari analisis teknikal adalah kondisi (secara keseluruhan) yang menggambarkan situasi pasar dan menjelaskan tindakan yang telah diambil oleh trader.
+
+Langkah aturan pola patterning :
+
+ * Growth Sequence
+ * Titik dimulai di tengah
+ * intensitas tertentu harus berdekatan
+ * Hindari pola simetri
+ * Piksel yang aktif dihindari
+
+Contoh pola patterning 2x2 :
+
+<p align="center"><img src="https://www.cs.princeton.edu/courses/archive/fall95/cs426/lectures/04-Images/Ht1.gif" alt="Operasi Dithering" width="500px">
+
+
+# MENENTUKAN MATRIKS DITHER ATAU MATRIKS TRESHOLD
+
+**Matriks Threshold**
+
+Thersholding merupakan salah satu metode sederhana dalam transformasi citra dari citra grayscale untuk membentuk citra biner, sebuah citra digital yang hanya memiliki dua kemungkinan warna pixelnya hitam dan putih
+
+<br>
+
+Halftoning: implementasi berdasarkan matriks acak
+
+<p align="center"><img src="https://t1.daumcdn.net/cfile/tistory/99F32C385BAA1F881F" alt="Operasi Dithering" width="500px">
+
+<br>
+
+Matriks Threshold acak ditentukan dan dibandingkan dengan file gambar, Tone > Th sisi 1 adalah output, sisi berlawanan 0 adalah output.
+
+<p align="center"><img src="https://t1.daumcdn.net/cfile/tistory/991D86355BAA20A01C" width="500px">
+
+<br>
+
+ex) Karena D1 adalah k=1, 2^(8-2) = 64 dalam citra 8-bit 
+
+<p align="center"><img src="https://t1.daumcdn.net/cfile/tistory/99F6B9375BAA20F921" width="500px">
+
+<br>
+
+D2 ditambahkan ke D1 dengan menghitung rumus di atas
+
+<p align="center"><img src="https://t1.daumcdn.net/cfile/tistory/991408365BAA21FD32" width="500px">
+
+<br>
+
+Penggunaan matriks dithering
+
+Dithering setelah membuatnya menjadi matriks yang seragam
+
+Untuk membagi dengan 4 tingkat, bagi 4-1 menjadi tiga -> bagi dengan 85
+
+<p align="center"><img src="https://t1.daumcdn.net/cfile/tistory/99FF70415BAA261609" width="500px">
+
+Setelah itu, seperti pada gambar di atas, P(i,j) mengurangi nilai yang diperoleh dengan mengalikan nilai terkuantisasi dengan 85 lagi dari nilai gambar aslinya, dan jika nilai yang dikurangi lebih besar dari matriks dithering, itu adalah 1, jika itu kurang, itu adalah 0, dan kemudian nilai ini ditambahkan ke nilai terkuantisasi lagi
+
+-> Alasan untuk membagi menjadi tiga diberikan di sini, karena ada kasus ketika menambahkan 1 - Pada akhirnya, ini dinyatakan sebagai tingkat 4
+
+<br>
+<br>
+<br>
+
 # Referensi 
 
 Tautan 1 :
@@ -98,3 +167,11 @@ https://www.baeldung.com/cs/convert-rgb-to-grayscale
 Tautan 2 :
 
 https://people.ece.ubc.ca/irenek/techpaps/introip/manual04.html
+
+Tautan 3 :
+
+https://www.cs.princeton.edu/courses/archive/fall95/cs426/lectures/04-quantization.html
+
+Tautan 4 :
+
+https://giantpark197cm.tistory.com/13
