@@ -1,5 +1,5 @@
-# Nama : Khairul Fuad
-# NIm : 2110131310002
+# Nama : Ady Mutalib 
+# NIm : 2110131110003
 
 ## __High Pass Filtering(HPF)__
 
@@ -39,7 +39,7 @@ Tujuan utama dari proses penajaman ini adalah untuk menyoroti detail-detail halu
 
 <p align="center"><img src="img/HPF_kernel5"></p>
 
-- kernel 6
+- kernel 6boot
 
 <p align="center"><img src="img/HPF_kernel6"></p>
 
