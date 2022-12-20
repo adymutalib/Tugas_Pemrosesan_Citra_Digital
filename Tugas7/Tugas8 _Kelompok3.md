@@ -2,9 +2,31 @@
 # Tugas Kelompok 
 # Anggota :
 # 1. Ady Mutalib
-# 2. Alfika Nurpadia
+# 2. Alfika Nurfadia
 # 3. Adelia Erlyn
 # 4. Ahmad Firdaus
+
+---
+# LOW PASS FILTERING
+## 1. Pengertian
+Low-pass filtering adalah proses filter yang melewatkan komponen citra dengan nilai intensitas yang rendah dan meredam komponen citra dengan nilai intensitas yang tinggi.
+
+LPF (Low Pass Filter) atau disebut juga smoothing filter merupakan salah satu metode untuk menghilangkan noise acak, noise berkala, dan menampilkan pola latar belakang. 
+Fungsi dasar dari low-pass filter yang ideal adalah untuk memperkirakan rata-rata sebuah piksel dan semua piksel tetangga dan akhirnya mengganti nilai asli dari piksel tersebut. 
+
+Low pass filter diterapkan untuk menghasilkan citra yang lebih halus dan lebih blur. 
+
+Aturan kernel untuk low-pass filter adalah:
+1. Semua koefisien kernel harus positif
+2. Jumlah semua koefisien kernel harus sama dengan 1.
+
+Contoh kernel yang dapat digunakan pada low-pass filtering adalah
+
+<p align="center"><img src="img\kernellowpass.JPG">
+
+- Contoh Code Menggunakan OCTAVE
+<p align="center"><img src="img\codelowwpass.JPG">
+<p align="center"><img src="img\hasillowpass.JPG">
 
 ## __Median Filtering__
 
